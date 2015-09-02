@@ -39,9 +39,8 @@ if [ "$CHOICEMOTHERFUCKER" == "y" ] ; then
 	iocage start moonstrapjail
 	iocage exec moonstrapjail fetch --no-verify-peer https://github.com/RainbowHackz/Moonstrap/edit/Moonstrap-0.5/moonstrap.sh
 	iocage exec moonstrapjail chmod +x moonstrap.sh
+	iocage exec moonstrapjail /root/moonstrap.sh
 
 else
   echo "Aborting..."
 fi
-echo "Bootstrapping build environment"
-
