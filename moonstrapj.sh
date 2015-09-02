@@ -37,7 +37,7 @@ if [ "$CHOICEMOTHERFUCKER" == "y" ] ; then
 	iocage create tag=moonstrapjail
 	iocage set ip4_addr="$stopeatingcakecelestia|$ahorseofcourse" moonstrapjail
 	iocage start moonstrapjail
-	iocage exec moonstrapjail fetch http://cloudsdale.ponix.space/~rainbow/scripts/palemoonfbsd/moonstrapauto.sh
+	iocage exec moonstrapjail fetch --no-verify-peer https://github.com/RainbowHackz/Moonstrap/edit/Moonstrap-0.5/moonstrap.sh
 	iocage exec moonstrapjail chmod +x moonstrap.sh
 
 else
