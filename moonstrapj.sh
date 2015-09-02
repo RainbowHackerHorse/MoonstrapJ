@@ -37,5 +37,5 @@ echo;echo -n "  Enter the Interface for your jail: ";read censoredvariable2
 iocage create tag=moonstrapjail
 iocage set ip4_addr="$censoredvariable2|$censoredvariable1" moonstrapjail
 iocage start moonstrapjail
-iocage exec moonstrapjail fetch http://cloudsdale.ponix.space/~rainbow/scripts/palemoonfbsd/moonstrap.sh
+iocage exec moonstrapjail fetch --no-verify-peer https://raw.githubusercontent.com/RainbowHackz/Moonstrap/Moonstrap-0.4/moonstrap.sh
 iocage exec moonstrapjail chmod +x moonstrap.sh
